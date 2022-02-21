@@ -1,0 +1,214 @@
+/* DEFAULT CSS STYLING */
+
+body {
+    font-family: 'IBM Plex Mono', monospace;
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+}
+
+h1, h2, .skills-list{
+    font-family: 'Inknut Antiqua', serif;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* START: Navigation Bar */
+
+nav {
+    background-color: rgb(255, 255, 144);
+    position: fixed;
+    /* when position fixed is applied it will float behind and shrink */
+    z-index: 1;
+    width: 100%;
+}
+
+nav ul {
+    margin: 0 auto;
+    text-align: center;
+    padding: 30px;
+}
+
+nav ul li {
+    display: inline-block;
+    position: relative;
+    /* NEED POSITION RELATIVE FOR NAV A HOVER TO WORK, IDK WHY LOL */
+    margin: 0 30px; 
+    /* 0 refers to top and bottom and 15px to left and right */
+    padding: 0;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+li.empty {
+    width: 90px;
+    border-top: 1px solid black;
+    top: -5px;
+}
+
+/* Navigation Hover */
+
+nav a:hover {
+    color: #000;
+}
+
+nav a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    width: 100%;
+    background-color: #000;
+    position: absolute;
+    top: -30px;
+    width: 0%;
+    transition: all ease-in-out 200ms;
+}
+
+nav ul li a:hover::before {
+    width: 100%;
+}
+
+/* Hover Navbar Codepen: https://codepen.io/QDeltaE/pen/VWGYOB */
+
+/* Hero Image and About Me */
+
+header {
+    display: flex;
+    padding-top: 80px;
+}
+
+.headercontainer {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.leftcolumn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hi-im-issy {
+    display: flex;
+    line-height: 100%;
+    font-size: 13rem;
+    font-weight: 500;
+}
+
+.top-5-skills {
+    margin-top: 50px;
+    font-size: 1.5rem;
+    list-style-type: circle;
+    padding-left: 100px
+}
+
+.top-5-skills li {
+    font-size: 1.5rem;
+    list-style-type: circle;
+    margin: 2px 50px;
+}
+
+.static {
+    position:absolute;
+    background: white;
+}
+  
+.static:hover {
+    opacity:0;
+}
+
+.hero-images img {
+    max-width: none;
+    height: 85vh;
+}
+
+h2 {
+    font-size: 30px;
+    line-height: 130%;
+    font-weight: normal;
+}
+
+p {
+    font-size: 15px;
+}
+
+.button {
+    border: 2px solid black;
+    box-shadow: 3px 5px black;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: black;
+    cursor: pointer;
+    padding: 10px 30px;
+    margin-top: 40px;
+    display: inline-block;
+    border-radius: 20px;
+    transition: background 0.5s ease-in-out, color 0.5s ease-in-out;
+    text-decoration: none;
+}
+
+.button:hover {
+    background: black;
+    color: white;
+
+}
+
+figcaption {
+    font-size: 10px;
+    margin-top: 10px;
+}
+
+img {
+    box-shadow: black 13px 18px;
+    margin-bottom: 10px;
+}
+
+.hero-image {
+    margin-top: 20px;
+}
+
+.skills-list {
+    text-align: center;
+    font-size: 50px;
+    /* line-height: 150%; */
+    margin-bottom: 100px;
+}
+
+section {
+    padding: 100px;
+}
+
+.project-yellow {
+    background-color: rgb(255, 255, 144);
+}
+
+footer {
+    text-align: center;
+    margin: 100px;
+}
+
+footer h2 {
+    font-size: 50px;
+    margin-bottom: 100px;
+}
+
+.right-alignment {
+    text-align: right;
+}
