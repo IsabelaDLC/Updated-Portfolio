@@ -189,6 +189,7 @@ img {
     font-size: 50px;
     /* line-height: 150%; */
     margin-bottom: 100px;
+    list-style: none;
 }
 
 section {
@@ -212,3 +213,5 @@ footer h2 {
 .right-alignment {
     text-align: right;
 }
+
+border: 1px solid black;
