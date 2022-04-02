@@ -63,7 +63,7 @@ nav {
     display: inline-block;
     position: relative;
     /* NEED POSITION RELATIVE FOR NAV A HOVER TO WORK, IDK WHY LOL */
-    margin: 0 25px; 
+    margin: 0;
     /* 0 refers to top and bottom and 15px to left and right */
     padding: 0;
     text-transform: uppercase;
@@ -112,7 +112,6 @@ nav ul li a:hover::before {
 
 header {
     display: flex;
-    padding-top: 80px;
 }
 
 .headercontainer {
@@ -166,12 +165,6 @@ header {
     margin: 2px 50px;
 }
 
-@media (max-width: 576px) {
-    .top-5-skills li {
-        font-size: 1.5rem;
-        list-style-type: circle;
-        margin: 2px 50px;
-}
 .static {
     position:absolute;
     background: white;
