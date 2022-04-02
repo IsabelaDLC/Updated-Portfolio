@@ -7,6 +7,15 @@ body {
     font-size: 15px;
 }
 
+@media (max-width: 576px) {
+    body {
+        font-family: 'IBM Plex Mono', monospace;
+        margin: 0;
+        padding: 0;
+        font-size: 10px;
+    }
+}
+
 h1, h2, .skills-list{
     font-family: 'Inknut Antiqua', serif;
 }
@@ -33,20 +42,35 @@ nav {
 nav ul {
     margin: 0 auto;
     text-align: center;
-    padding: 30px;
+    padding: 25px;
 }
 
 nav ul li {
     display: inline-block;
     position: relative;
     /* NEED POSITION RELATIVE FOR NAV A HOVER TO WORK, IDK WHY LOL */
-    margin: 0 30px; 
+    margin: 0 25px; 
     /* 0 refers to top and bottom and 15px to left and right */
     padding: 0;
     text-transform: uppercase;
     font-weight: 500;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     letter-spacing: 1px;
+}
+
+@media (max-width: 1500px) {
+nav {
+    display: inline-block;
+    position: relative;
+    /* NEED POSITION RELATIVE FOR NAV A HOVER TO WORK, IDK WHY LOL */
+    margin: 0 25px; 
+    /* 0 refers to top and bottom and 15px to left and right */
+    padding: 0;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+}
 }
 
 nav ul li a {
@@ -57,7 +81,7 @@ nav ul li a {
 li.empty {
     width: 90px;
     border-top: 1px solid black;
-    top: -5px;
+    top: -10px;
 }
 
 /* Navigation Hover */
@@ -69,7 +93,7 @@ nav a:hover {
 nav a::before {
     content: '';
     display: block;
-    height: 5px;
+    height: 10px;
     width: 100%;
     background-color: #000;
     position: absolute;
@@ -108,23 +132,46 @@ header {
 .hi-im-issy {
     display: flex;
     line-height: 100%;
-    font-size: 13rem;
+    font-size: 11rem;
     font-weight: 500;
+}
+
+@media (max-width: 576px) {
+    .hi-im-issy {
+        display: flex;
+        line-height: 100%;
+        font-size: 6.5rem;
+        font-weight: 500;
+        text-align: center;
+    }
 }
 
 .top-5-skills {
     margin-top: 50px;
-    font-size: 1.5rem;
     list-style-type: circle;
     padding-left: 100px
 }
 
+@media (max-width: 576px) {
+    .top-5-skills {
+        margin-top: 50px;
+        list-style-type: circle;
+        padding-left: 20px
+    }
+}
+
 .top-5-skills li {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     list-style-type: circle;
     margin: 2px 50px;
 }
 
+@media (max-width: 576px) {
+    .top-5-skills li {
+        font-size: 1.5rem;
+        list-style-type: circle;
+        margin: 2px 50px;
+}
 .static {
     position:absolute;
     background: white;
@@ -136,7 +183,7 @@ header {
 
 .hero-images img {
     max-width: none;
-    height: 85vh;
+    height: 80vh;
 }
 
 h2 {
